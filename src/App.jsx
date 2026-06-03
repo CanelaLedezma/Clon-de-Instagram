@@ -1,12 +1,11 @@
 import './App.css'; // lo conecto con su css
-
+import Sidebar from './componentes/Sidebar';
 function App() {
-  return (
+  return ( //lo q se va a ver en la pantalla
     <div className="app">
       <h1>Clon de Instagram</h1>
-      <div className="sidebar">
-        <h2>Sidebar</h2>
-      </div>
+     
+     <Sidebar />  
 
       <div className="contenido-principal">
         <div className="header">
@@ -24,7 +23,7 @@ function App() {
       </div>
     </div>
   );
-}//lo q se va a ver
+}
 
 
 export default App;

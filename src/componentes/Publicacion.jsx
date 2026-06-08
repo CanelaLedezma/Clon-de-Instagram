@@ -1,9 +1,9 @@
-function Publicacion() {
+function Publicacion({usuario, descripcion}) {
   return (
     <div className="publicacion">
         
-      <h3>Usuario</h3> {/* aca va a ir el nombre del usuario de la publicación */}
-      <p>Acá va una publicación</p> {/* aca va a ir la imagen de la publicación */}
+      <h3>{usuario}</h3> {/* aca va  el nombre del usuario de la publicación */}
+      <p>{descripcion}</p> {/* aca va  la imagen de la publicación */}
     </div>
   );
 }

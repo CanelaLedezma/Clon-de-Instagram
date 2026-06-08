@@ -5,7 +5,10 @@ function Feed (){
     <div className="feed">
       <h2>Feed</h2>
       {/* Muestro una publicación del feed */}
-      <Publicacion/>
+       <Publicacion 
+        usuario="Canela"
+        descripcion="Primera publicación del clon de Instagram"
+      />
     </div>
     );
 }

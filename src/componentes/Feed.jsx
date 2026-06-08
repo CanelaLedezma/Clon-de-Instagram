@@ -4,18 +4,18 @@ function Feed (){
  const publicaciones = [
     {
       id: 1,
-      usuario: 'Canela',
-      descripcion: 'Primera publicación del clon de Instagram',
+      usuario: 'Persona1',
+      descripcion: 'publicación del feed 1',
     },
     {
       id: 2,
-      usuario: 'Mora',
-      descripcion: 'Segunda publicación del feed',
+      usuario: 'Persona2',
+      descripcion: 'publicación del feed 2',
     },
     {
       id: 3,
-      usuario: 'Luna',
-      descripcion: 'Otra publicación de prueba',
+      usuario: 'Persona3',
+      descripcion: 'publicación del feed 3',
     },
   ];    
   
@@ -23,8 +23,7 @@ function Feed (){
     <div className="feed">
       <h2>Feed</h2>
 
-      {publicaciones.map((publicacion) => (
-        <Publicacion
+      {publicaciones.map((publicacion) => (  <Publicacion
           key={publicacion.id}
           usuario={publicacion.usuario}
           descripcion={publicacion.descripcion}

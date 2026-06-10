@@ -10,7 +10,7 @@ import Feed from './componentes/Feed';
 
 function App() {
   const [imagenes, setImagenes] = useState([]);
-
+  const [publicacionSeleccionada, setPublicacionSeleccionada] = useState(null);
   useEffect(() => {
   async function obtenerImagenes() {
     const respuesta = await axios.get(
@@ -26,12 +26,14 @@ function App() {
   return ( // lo que se va a ver en la pantalla
     <div className="app">
       <h1>Clon de Instagram</h1>
-
       <Sidebar />
       <Header />
       <Historias />
-      <Feed imagenes={imagenes} />
-    </div>
+      <Feed
+      imagenes={imagenes}
+      seleccionarPublicacion={setPublicacionSeleccionada}
+      />    
+      </div>
   );
 }
 

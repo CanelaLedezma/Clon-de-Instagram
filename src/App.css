@@ -199,3 +199,48 @@ body {
   color: white;
   cursor: pointer;
 }
+
+.tarjeta-perfil {
+  padding: 16px;
+  margin-bottom: 24px;
+  background-color: #1b1746;
+  border-radius: 10px;
+}
+
+.tarjeta-perfil h3 {
+  margin: 0 0 6px;
+}
+
+.tarjeta-perfil p {
+  margin: 6px 0;
+  color: #c7c4dc;
+}
+
+.tarjeta-perfil button {
+  margin-top: 12px;
+  text-align: center;
+  background-color: #e83e8c;
+}
+.publicacion {
+  padding: 14px;
+  background-color: #15113d;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.publicacion h3 {
+  margin: 0 0 10px;
+}
+
+.publicacion p {
+  color: #c7c4dc;
+}
+
+.publicacion button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #1b1746;
+  color: white;
+  cursor: pointer;
+}

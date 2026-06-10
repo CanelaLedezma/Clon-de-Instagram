@@ -48,21 +48,23 @@ function App() {
     />
   );
 }
+return ( // lo que se va a ver en la pantalla
+  <div className="app">
+    <Sidebar
+      mostrarFeed={() => setVistaActual('feed')}
+      mostrarPerfil={() => setVistaActual('perfil')}
+    />
 
-  return ( // lo que se va a ver en la pantalla
-    <div className="app">
+    {/* Agrupo el contenido que va a estar a la derecha del Sidebar */}
+    <div className="contenido-principal">
       <h1>Clon de Instagram</h1>
 
-<Sidebar
-  mostrarFeed={() => setVistaActual('feed')}
-  mostrarPerfil={() => setVistaActual('perfil')}
-/>      <Header />
+      <Header />
+      <Historias imagenes={imagenes} />
 
-<Historias imagenes={imagenes} />
-      {/* muestro el feed o el detalle según haya una publicación seleccionada */}
+      {/* Muestro el feed, el perfil o el detalle */}
       {mostrarContenido()}
     </div>
-  );
-}
-
+  </div>
+);}
 export default App;

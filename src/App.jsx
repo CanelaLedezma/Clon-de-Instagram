@@ -57,8 +57,8 @@ function App() {
   mostrarFeed={() => setVistaActual('feed')}
   mostrarPerfil={() => setVistaActual('perfil')}
 />      <Header />
-      <Historias />
 
+<Historias imagenes={imagenes} />
       {/* muestro el feed o el detalle según haya una publicación seleccionada */}
       {mostrarContenido()}
     </div>

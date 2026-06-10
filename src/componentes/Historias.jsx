@@ -1,11 +1,14 @@
-function Historias() {
+function Historias({ imagenes }) {  
   return (
     <div className="historias">
-      {/* Muestro historias de ejemplo para copiar la estructura del Figma */}
-      <div>Historia 1</div>
-      <div>Historia 2</div>
-      <div>Historia 3</div>
-      <div>Historia 4</div>
+      <h2>Gatorias</h2>
+{/* Tomo las primeras cuatro imágenes y muestro una por cada elemento */}
+     {imagenes.slice(0, 4).map((imagen) => (
+        <img
+          key={imagen.id}
+          src={imagen.url}
+          alt="Imagen de gato en una gatoria (gato-historia)"        />
+      ))}
     </div>
   );
 }

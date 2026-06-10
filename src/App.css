@@ -147,3 +147,55 @@ body {
   color: white;
   cursor: pointer;
 }
+
+.perfil {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #15113d;
+  border-radius: 10px;
+}
+
+.perfil h2 {
+  margin-top: 0;
+}
+
+.perfil p {
+  margin: 10px 0;
+}
+
+.perfil button {
+  margin-top: 15px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: #e83e8c;
+  color: white;
+  cursor: pointer;
+}
+
+.perfil {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #15113d;
+  border-radius: 10px;
+}
+
+.perfil h2 {
+  margin-top: 0;
+}
+
+.perfil p {
+  margin: 10px 0;
+}
+
+.perfil button {
+  margin-top: 15px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: #e83e8c;
+  color: white;
+  cursor: pointer;
+}

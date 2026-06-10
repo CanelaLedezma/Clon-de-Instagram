@@ -11,13 +11,17 @@ import Feed from './componentes/Feed';
 function App() {
   const [imagenes, setImagenes] = useState([]);
 
-  useEffect(async () => {
+  useEffect(() => {
+  async function obtenerImagenes() {
     const respuesta = await axios.get(
       'https://api.thecatapi.com/v1/images/search?limit=10'
     );
 
     setImagenes(respuesta.data);
-  }, []);
+  }
+
+  obtenerImagenes();
+}, []);
 
   return ( // lo que se va a ver en la pantalla
     <div className="app">

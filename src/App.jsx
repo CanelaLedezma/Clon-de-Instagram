@@ -53,8 +53,10 @@ function App() {
     <div className="app">
       <h1>Clon de Instagram</h1>
 
-      <Sidebar />
-      <Header />
+<Sidebar
+  mostrarFeed={() => setVistaActual('feed')}
+  mostrarPerfil={() => setVistaActual('perfil')}
+/>      <Header />
       <Historias />
 
       {/* muestro el feed o el detalle según haya una publicación seleccionada */}

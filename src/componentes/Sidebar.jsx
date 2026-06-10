@@ -1,16 +1,20 @@
 import TarjetaPerfil from './TarjetaPerfil';
 
-function Sidebar() {
+function Sidebar({ mostrarFeed, mostrarPerfil }) {
   return (
     <div className="sidebar">
       <h2>Sidebar</h2>
 
-      <TarjetaPerfil //agregue informacion de ejemplo para simular un usuario y su informacion
+      {/* Agregué información de ejemplo para simular un usuario */}
+      <TarjetaPerfil
         nombre="Canela Ledezma"
         usuario="@canela"
         seguidores="1200"
         seguidos="350"
       />
+
+      <button onClick={mostrarFeed}>Feed</button>
+      <button onClick={mostrarPerfil}>Perfil</button>
     </div>
   );
 }

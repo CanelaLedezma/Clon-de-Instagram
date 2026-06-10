@@ -29,10 +29,16 @@ function App() {
       <Sidebar />
       <Header />
       <Historias />
-      <Feed
-      imagenes={imagenes}
-      seleccionarPublicacion={setPublicacionSeleccionada}
-      />    
+     <Feed
+  imagenes={imagenes}
+  seleccionarPublicacion={setPublicacionSeleccionada}
+/>
+
+
+<Feed
+  imagenes={imagenes}
+  seleccionarPublicacion={setPublicacionSeleccionada}
+/>
       </div>
   );
 }

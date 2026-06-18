@@ -37,10 +37,9 @@ function App() {
       />
     );
   }
-
-  if (vistaActual === 'perfil') {
-    return <Perfil/>;
-  }
+if (vistaActual === 'perfil') {
+  return <Perfil imagenes={imagenes} />;
+}
 
   return (
     <Feed

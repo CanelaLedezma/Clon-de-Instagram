@@ -1,4 +1,4 @@
-function Perfil() {
+function Perfil({imagenes}) {
     // Muestro datos del usuario logueado (ejemplo)
   return (
     <div className="perfil">

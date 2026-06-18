@@ -11,7 +11,8 @@ import Feed from './componentes/Feed';
 import DetallePublicacion from './componentes/DetallePublicacion';
 
 function App() {
-  const [vistaActual, setVistaActual] = useState('feed');
+  //setVistaActual: función q actualiza vistaActual
+  const [vistaActual, setVistaActual] = useState('feed'); // creo un estado 
   const [imagenes, setImagenes] = useState([]);
   const [publicacionSeleccionada, setPublicacionSeleccionada] = useState(null);
 
@@ -38,7 +39,7 @@ function App() {
   }
 
   if (vistaActual === 'perfil') {
-    return <Perfil />;
+    return <Perfil/>;
   }
 
   return (
@@ -51,6 +52,7 @@ function App() {
 return ( // lo que se va a ver en la pantalla
   <div className="app">
     <Sidebar
+    //funciones como prop con arrow function
       mostrarFeed={() => setVistaActual('feed')}
       mostrarPerfil={() => setVistaActual('perfil')}
     />

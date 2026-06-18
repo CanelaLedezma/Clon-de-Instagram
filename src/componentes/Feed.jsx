@@ -5,16 +5,30 @@ function Feed({ imagenes, seleccionarPublicacion }) {
     <div className="feed">
       <h2>Feed</h2>
 
-      {imagenes.map((imagen, index) => (
-        <Publicacion
+      {imagenes.map((imagen, index) => {
+        const usuario = 'Persona'+ (index +1);
+        const descripcion = 'Publicacion del feed' + (index + 1);
+        return(
+<Publicacion
           key={imagen.id}
-          usuario={'Persona' + (index + 1)}
-          descripcion={'Publicación del feed ' + (index + 1)}
+          usuario={usuario}
+          descripcion={descripcion}
           imagen={imagen.url}
-          seleccionarPublicacion={() => seleccionarPublicacion(imagen)}
+          seleccionarPublicacion={() => 
+            seleccionarPublicacion({
+              id: imagen.id,
+              url:imagen.url,
+              usuario:usuario,
+              descripcion:descripcion
+
+            })}
         />
-      ))}
-    </div>
+      
+        );
+        
+      })}
+            </div>
+
   );
 }
 

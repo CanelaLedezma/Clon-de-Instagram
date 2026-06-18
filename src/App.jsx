@@ -53,8 +53,14 @@ return ( // lo que se va a ver en la pantalla
   <div className="app">
     <Sidebar
     //funciones como prop con arrow function
-      mostrarFeed={() => setVistaActual('feed')}
-      mostrarPerfil={() => setVistaActual('perfil')}
+      mostrarFeed={() => {
+        setPublicacionSeleccionada(null);
+        setVistaActual('feed');
+      }}
+      mostrarPerfil={() => {
+        setPublicacionSeleccionada(null);
+        setVistaActual('perfil');
+      }}
     />
 
     {/* Agrupo el contenido que va a estar a la derecha del Sidebar */}

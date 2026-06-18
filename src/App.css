@@ -252,3 +252,38 @@ body {
   display: block;
   margin: 0 auto 12px;
 }
+.perfil-encabezado {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.foto-perfil-completa {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #e83e8c;
+  flex-shrink: 0;
+}
+
+.perfil-estadisticas {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.publicaciones-perfil {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.publicaciones-perfil img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}

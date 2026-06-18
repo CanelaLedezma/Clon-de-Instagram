@@ -28,12 +28,13 @@ function DetallePublicacion({ publicacion, cerrarDetalle }) {
 
       <img
         src={publicacion.url}
-        alt="Publicación seleccionada"
+        alt={publicacion.descripcion}
       />
 
-      <h3>Persona</h3>
-      <p>Descripción de la publicación</p>
-      <p>100 Me gusta</p>
+      <h3>{publicacion.usuario}</h3>
+      <p>{publicacion.descripcion}</p> 
+      {/* das like: + 1 like*/}
+      <p>{meGusta ? '101 Me gusta' : '100 Me gusta'}</p>
 
       <button onClick={cambiarMeGusta}>
         {mostrarCorazon()}

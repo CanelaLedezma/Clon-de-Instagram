@@ -12,8 +12,8 @@ import DetallePublicacion from './componentes/DetallePublicacion';
 
 function App() {
   //setVistaActual: función q actualiza vistaActual
-  const [vistaActual, setVistaActual] = useState('feed'); // creo un estado 
-  const [imagenes, setImagenes] = useState([]);
+  const [vistaActual, setVistaActual] = useState('feed'); // feed valor inicial
+  const [imagenes, setImagenes] = useState([]);//para recibir theCat api imagenes
   const [publicacionSeleccionada, setPublicacionSeleccionada] = useState(null);
 
   useEffect(() => {
@@ -52,7 +52,8 @@ function App() {
 return ( // lo que se va a ver en la pantalla
   <div className="app">
     <Sidebar
-    //funciones como prop con arrow function
+    //le paso a sidebar funcion q muestra feed y perfil
+    //dsp sidebar la coloca en onClick
       mostrarFeed={() => {
         setPublicacionSeleccionada(null);
         setVistaActual('feed');

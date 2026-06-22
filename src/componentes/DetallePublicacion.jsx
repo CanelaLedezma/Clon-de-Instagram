@@ -39,6 +39,16 @@ function DetallePublicacion({ publicacion, cerrarDetalle }) {
       <button onClick={cambiarMeGusta}>
         {mostrarCorazon()}
       </button>
+      
+  <div className="comentarios">
+  <h3>Comentarios</h3>
+
+  {publicacion.comentarios.map((comentario) => (
+    <p key={comentario.id}>
+      <strong>{comentario.usuario}</strong> {comentario.texto}
+    </p>
+  ))}
+</div>
     </div>
   );
 }

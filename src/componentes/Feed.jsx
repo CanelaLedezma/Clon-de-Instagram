@@ -8,6 +8,19 @@ function Feed({ imagenes, seleccionarPublicacion }) {
       {imagenes.map((imagen, index) => {
         const usuario = 'Persona'+ (index +1);
         const descripcion = 'Publicacion del feed' + (index + 1);
+        const comentarios = [
+          {
+            id: 1,
+            usuario: '@usuario1',
+            texto: 'Que linda publicacion!!'
+          }
+          ,
+          {
+            id: 2,
+            usuario: '@usuario2',
+            texto: 'Es igual a mi gatoo'
+          }
+        ];
         return(
 <Publicacion
           key={imagen.id}
@@ -19,7 +32,8 @@ function Feed({ imagenes, seleccionarPublicacion }) {
               id: imagen.id,
               url:imagen.url,
               usuario:usuario,
-              descripcion:descripcion
+              descripcion:descripcion,
+              comentarios: comentarios
 
             })}
         />

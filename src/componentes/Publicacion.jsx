@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function Publicacion({ usuario, descripcion, imagen, seleccionarPublicacion }) {
+function Publicacion({ usuario, descripcion, imagen, seleccionarPublicacion}) {
   // useState crea un estado para guardar si esta publicación tiene "Me gusta"
   const [meGusta, setMeGusta] = useState(false);
 

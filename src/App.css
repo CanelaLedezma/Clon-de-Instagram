@@ -287,3 +287,31 @@ body {
   object-fit: cover;
   border-radius: 8px;
 }
+
+.cantidad-me-gusta {
+  font-weight: bold;
+}
+
+.comentarios {
+  margin-top: 12px;
+}
+
+.comentario {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.comentario p {
+  margin: 6px 0;
+}
+
+.comentario strong {
+  margin-right: 5px;
+}
+
+.comentario span {
+  font-size: 18px;
+  color: #c7c4dc;
+}

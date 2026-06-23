@@ -19,14 +19,15 @@ La carpeta src está organizada así:
 
 * componentes:
 
-  * DetallePublicacion.jsx
-  * Feed.jsx
-  * Header.jsx
-  * Historias.jsx
-  * Perfil.jsx
-  * Publicacion.jsx
-  * Sidebar.jsx
-  * TarjetaPerfil.jsx
+→  DetallePublicacion.jsx
+→  Feed.jsx
+→  Header.jsx
+→  Historias.jsx
+→  Perfil.jsx
+→  Publicacion.jsx
+→  Sidebar.jsx
+→  TarjetaPerfil.jsx
+
 * App.css
 * App.jsx
 * index.css
@@ -130,7 +131,7 @@ Elegí esos datos porque son los principales datos que aparecen en el perfil de 
 ¿Qué estados usé para seleccionar publicaciones o manejar la vista individual?
 
 Utilicé los siguientes estados:
-
+ 
 * vistaActual: guarda si se debe mostrar el feed o el perfil. Su valor inicial es “feed”.
 * imagenes: guarda el array de imágenes obtenido desde The Cat API. Su valor inicial es un array vacío.
 * publicacionSeleccionada: guarda el objeto de la publicación abierta. Su valor inicial es null.

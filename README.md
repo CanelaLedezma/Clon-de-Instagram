@@ -1,3 +1,16 @@
+Link del repo:
+https://github.com/CanelaLedezma/Clon-de-Instagram.git 
+
+Link del Figma:
+https://www.figma.com/design/b0bc7kmqSubCSHb3uXJlnv/%C4%B0nstagram-Modern-Web-Design--Community-?m=auto&t=tRvw8FouuOUrla1a-6
+
+Instrucciones para ejecutar el proyecto:
+1. Clonar el repositorio.
+2. Entrar a la carpeta del proyecto.
+3. Ejecutar npm install.
+4. Ejecutar npm run dev.
+5. Abrir el link que aparece en la terminal (el de local host).
+
 ¿Cómo organice el proyecto? (y componentes)
 
 App es el componente principal. El resto de los componentes estan en la carpeta “componentes”.
@@ -113,7 +126,8 @@ El nombre
 
 Elegí esos datos porque son los principales datos que aparecen en el perfil de una red social y también están presentes en el diseño de referencia.
 
-## ¿Qué estados usé para seleccionar publicaciones o manejar la vista individual?
+----
+¿Qué estados usé para seleccionar publicaciones o manejar la vista individual?
 
 Utilicé los siguientes estados:
 

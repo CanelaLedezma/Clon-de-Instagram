@@ -17,7 +17,7 @@ function App() {
   const [publicacionSeleccionada, setPublicacionSeleccionada] = useState(null);
 
   useEffect(() => {
-    async function obtenerImagenes() {
+    async function obtenerImagenes() { //declaro
       const respuesta = await axios.get(
         'https://api.thecatapi.com/v1/images/search?limit=10'
       );
@@ -25,7 +25,7 @@ function App() {
       setImagenes(respuesta.data);
     }
 
-    obtenerImagenes();
+    obtenerImagenes();//uso
   }, []);
 
   function mostrarContenido() {

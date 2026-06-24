@@ -5,7 +5,8 @@ function Feed({ imagenes, seleccionarPublicacion }) {
     <div className="feed">
       <h2>Feed</h2>
 
-      {imagenes.map((imagen, index) => {
+      {imagenes.map((imagen, index) => { 
+      //crea variables de c/elemento
         const usuario = 'Persona'+ (index +1);
         const descripcion = 'Publicacion del feed' + (index + 1);
         const comentarios = [

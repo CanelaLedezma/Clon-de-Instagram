@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
 function DetallePublicacion({ publicacion, cerrarDetalle }) {
-  // Guardo el Me gusta de la publicación
-  const [meGusta, setMeGusta] = useState(false);
+  
+  const [meGusta, setMeGusta] = useState(false);//inicialmente no tiene mg
 
   // Guardo los id de los comentarios que tienen Me gusta
   const [comentariosConMeGusta, setComentariosConMeGusta] = useState([]);

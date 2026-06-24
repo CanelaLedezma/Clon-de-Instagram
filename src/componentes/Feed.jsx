@@ -28,6 +28,8 @@ function Feed({ imagenes, seleccionarPublicacion }) {
           usuario={usuario}
           descripcion={descripcion}
           imagen={imagen.url}
+  
+  //prop se ejecuta al hacer click en Publicacion:
           seleccionarPublicacion={() => 
             seleccionarPublicacion({
               id: imagen.id,

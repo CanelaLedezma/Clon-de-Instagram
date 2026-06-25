@@ -17,12 +17,19 @@ La carpeta src está organizada así:
 * componentes:
 
 →  DetallePublicacion.jsx
+
 →  Feed.jsx
+
 →  Header.jsx
+
 →  Historias.jsx
+
 →  Perfil.jsx
+
 →  Publicacion.jsx
+
 →  Sidebar.jsx
+
 →  TarjetaPerfil.jsx
 
 * App.css

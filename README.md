@@ -85,10 +85,6 @@ UseEffect se utiliza para realizar la solicitud a The Cat API cuando se carga la
 El array vacío del useEffect hace que la solicitud se ejecute una sola vez al cargar el componente.
 
 ----
-El diseño de figma que use como referencia:
-este es el link: https://www.figma.com/design/b0bc7kmqSubCSHb3uXJlnv/%C4%B0nstagram-Modern-Web-Design--Community-?m=auto&t=tRvw8FouuOUrla1a-6
-
-----
 ¿Cómo resolvi la visualización individual de publicaciones?
 
 Para mostrar una publicación individual use el estado publicacionSeleccionada.

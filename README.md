@@ -1,6 +1,3 @@
-Link del repo:
-https://github.com/CanelaLedezma/Clon-de-Instagram.git 
-
 Link del Figma:
 https://www.figma.com/design/b0bc7kmqSubCSHb3uXJlnv/%C4%B0nstagram-Modern-Web-Design--Community-?m=auto&t=tRvw8FouuOUrla1a-6
 

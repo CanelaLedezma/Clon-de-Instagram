@@ -4,9 +4,6 @@ function DetallePublicacion({ publicacion, cerrarDetalle }) {
   
   const [meGusta, setMeGusta] = useState(false);//inicialmente no tiene mg
 
-  // Guardo los id de los comentarios que tienen Me gusta
-  const [comentariosConMeGusta, setComentariosConMeGusta] = useState([]);
-
   function cambiarMeGusta() {
     if (meGusta === false) {
       setMeGusta(true);
@@ -22,30 +19,7 @@ function DetallePublicacion({ publicacion, cerrarDetalle }) {
 
     return '🤍';
   }
-
-  function cambiarMeGustaComentario(id) {
-    if (comentariosConMeGusta.includes(id)) {
-      const nuevosComentarios = comentariosConMeGusta.filter(
-        (comentarioId) => comentarioId !== id
-      );
-
-      setComentariosConMeGusta(nuevosComentarios);
-    } else {
-      setComentariosConMeGusta([
-        ...comentariosConMeGusta,
-        id
-      ]);
-    }
-  }
-
-  function mostrarCorazonComentario(id) {
-    if (comentariosConMeGusta.includes(id)) {
-      return '❤️';
-    }
-
-    return '🤍';
-  }
-
+  
   return (
     <div className="detalle-publicacion">
       <button onClick={cerrarDetalle}>Cerrar</button>
@@ -74,12 +48,6 @@ function DetallePublicacion({ publicacion, cerrarDetalle }) {
               <strong>{comentario.usuario}</strong> {comentario.texto}
             </p>
 
-            <span
-              className="corazon-comentario"
-              onClick={() => cambiarMeGustaComentario(comentario.id)}
-            >
-              {mostrarCorazonComentario(comentario.id)}
-            </span>
           </div>
         ))}
       </div>

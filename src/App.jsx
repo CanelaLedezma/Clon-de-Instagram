@@ -26,8 +26,7 @@ function App() {
     }
 
     obtenerImagenes();//uso
-  }, []);
-
+  }, []);// no dependas de nada para volver a ejecutarlo
   function mostrarContenido() {
   if (publicacionSeleccionada) {
     return (

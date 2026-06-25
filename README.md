@@ -115,11 +115,7 @@ Decidí mostrar:
 * La cantidad de seguidores.
 * La cantidad de seguidos.
 * El botón “Editar perfil”.
-El nombre
-
-
-Elegí esos datos porque son los principales datos que aparecen en el perfil de una red social y también están presentes en el diseño de referencia.
-
+Elegí esos datos porque son los principales datos que aparecen en el perfil de cualquier red social y también están en el figma.
 ----
 ¿Qué estados usé para seleccionar publicaciones o manejar la vista individual?
 

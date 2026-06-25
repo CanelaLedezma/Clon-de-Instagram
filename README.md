@@ -80,7 +80,7 @@ UseState permite guardar valores que pueden cambiar y actualizar la pantalla cua
 
 En App lo utilicé para guardar la vista actual, las imágenes recibidas y la publicación seleccionada. También lo utilicé en Publicacion y DetallePublicacion para controlar el estado del “Me gusta”.
 
-UseEffect se utiliza para realizar la solicitud a The Cat API cuando se carga la aplicación. Dentro del efecto llamo a la función obtenerImagenes y guardo la respuesta de la API en el estado imagenes.
+Use UseEffect para hacer la solicitud a The Cat API cuando se carga la pagina. Dentro del efecto llamo a la función obtenerImagenes y guardo la respuesta de la API en el estado imagenes.
 
 El array vacío del useEffect hace que la solicitud se ejecute una sola vez al cargar el componente.
 

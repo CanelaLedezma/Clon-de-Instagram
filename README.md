@@ -1,3 +1,7 @@
+Link de la reflexion:
+https://docs.google.com/document/d/13MQRh6AlTyalYG3oQe9G19pbpzaiWjlg2giZ-tFmGSM/edit?usp=sharing
+
+
 Link del Figma:
 https://www.figma.com/design/b0bc7kmqSubCSHb3uXJlnv/%C4%B0nstagram-Modern-Web-Design--Community-?m=auto&t=tRvw8FouuOUrla1a-6
 
